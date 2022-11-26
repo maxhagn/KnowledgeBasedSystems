@@ -6,6 +6,6 @@
 safety_net(1..10).
 attackCnt(X, Y, 0) :- tile(X, Y), not attackCnt(X, Y, N), safety_net(N).
 
-size(2).
-bishopCnt(3).
-attackCnt(X, Y, 1) :- tile(X, Y).
+size(5).
+bishopCnt(25).
+attackCnt(1, 3, 3).

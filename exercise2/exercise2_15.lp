@@ -1,15 +1,15 @@
 #show bishopPos/2.
-%Models: 1
+%Models: 16
 
-% mnr: 1
+% mnr: 16
 % incs: bishopPos(1,1)
-% incs: bishopPos(1,3)
-% incs: bishopPos(3,1)
-% incs: bishopPos(3,3)
+% incs: bishopPos(5,1)
+% incs: bishopPos(1,5)
+% incs: bishopPos(5,5)
 
 safety_net(1..10).
 attackCnt(X, Y, 0) :- tile(X, Y), not attackCnt(X, Y, N), safety_net(N).
 
-size(3). 
+size(5).
 bishopCnt(4).
-attackCnt(2, 2, 4) :- tile(X, Y).
+attackCnt(3, 3, 4).
