@@ -20,7 +20,7 @@ reached1(X,0) :- preserve(X,_).
 reached1(Y,K) :- reached1(X,Z), edge1(X,Y), numNodes1(C), K = Z + 1, Z <= C.
 
 % extract minimum distance to end of preserve in graph G
-pathToPres1(X,MIN) :- preserve(_,X), #min{C : reached1(X,C)} = MIN.
+pathToPres1(X,MIN) :- reached1(X,_), preserve(_,X), #min{C : reached1(X,C)} = MIN.
 
 % create mapped graph
 pathAfterMap(A,B) :- vertex2(X), edge2(X,Y), maps(A,X), maps(B,Y).

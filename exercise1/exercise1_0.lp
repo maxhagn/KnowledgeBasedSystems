@@ -1,6 +1,12 @@
 #show maps/2.
 % Model: 1
 
+% mnr: 1
+% incs: maps(a,e)
+% incs: maps(b,f)
+% incs: maps(c,f)
+% incs: maps(d,g)
+
 numNodes1(4). numNodes2(3).
 
 edge1(a, b).

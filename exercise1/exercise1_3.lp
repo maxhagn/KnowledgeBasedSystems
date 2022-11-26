@@ -1,15 +1,18 @@
 #show maps/2.
 % Model: 1
 
-numNodes1(4). numNodes2(3).
+% mnr: 1
+% incs: maps(a,x)
+% incs: maps(b,x)
+% incs: maps(c,x)
+
+numNodes1(3). numNodes2(2).
 
 edge1(a, b).
-edge1(a, c).
-edge1(b, d).
-edge1(c, d).
+edge1(b, c).
+edge1(c, a).
 
-edge2(e, f).
-edge2(f, g).
-edge2(e, e).
+edge2(x, x).
+edge2(x, y).
 
-preserve(a, d).
+preserve(a, b).

@@ -3,12 +3,13 @@
 
 % mnr: 1
 % incs: maps(a,x)
-% incs: maps(b,y)
+% incs: maps(b,x)
 
-numNodes1(2). numNodes2(2).
+numNodes1(2). numNodes2(1).
 
 edge1(a, b).
+edge1(b, a).
 
-edge2(x, y).
+edge2(x, x).
 
 preserve(a,b).
