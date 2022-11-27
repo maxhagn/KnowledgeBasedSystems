@@ -1,11 +1,13 @@
 #show maps/2.
-% Model: 3
 
+% Model: 3
+% Answer Set 1: maps(a,x) maps(b,y)
+% Answer Set 2: maps(a,x) maps(b,z)
+% Answer Set 3: maps(a,x) maps(b,x)
 % mnr: 3
-% incs: maps(a,x)
-% incs: maps(b,x)
-% incs: maps(b,y)
-% incs: maps(b,z)
+% incs: maps(a,x) maps(b,y)
+% incs: maps(a,x) maps(b,z)
+% incs: maps(a,x) maps(b,x)
 
 numNodes1(2). numNodes2(3).
 

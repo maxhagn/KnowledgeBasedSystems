@@ -1,10 +1,9 @@
 #show maps/2.
-% Model: 1
 
+% Model: 1
+% Answer Set 1: maps(a,x) maps(b,y) maps(c,z)
 % mnr: 1
-% incs: maps(a,x)
-% incs: maps(b,y)
-% incs: maps(c,z)
+% incs: maps(a,x) maps(b,y) maps(c,z)
 
 numNodes1(3). numNodes2(3).
 
@@ -19,6 +18,5 @@ edge2(y, z).
 edge2(z, x).
 edge2(z, y).
 edge2(z, z).
-
 
 preserve(a,c).

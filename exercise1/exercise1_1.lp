@@ -1,9 +1,9 @@
 #show maps/2.
-% Model: 1
 
+% Model: 1
+% Answer Set 1: maps(a,x) maps(b,y)
 % mnr: 1
-% incs: maps(a,x)
-% incs: maps(b,y)
+% incs: maps(a,x) maps(b,y)
 
 numNodes1(2). numNodes2(2).
 
