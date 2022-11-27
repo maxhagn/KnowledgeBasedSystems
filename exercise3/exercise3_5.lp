@@ -3,8 +3,8 @@
 % Model: empty.
 
 % mnr: 1
-% incs: groupMinus(gruppe,100)
-% incs: universityMinus(-2600)
+% incs: groupMinus(complang,100)
+% incs: universityMinus(-2400)
 
 person(a, 100).
 person(b, 100).
@@ -33,4 +33,4 @@ person(x, 100).
 person(y, 100).
 person(z, 100).
 
-assigned(a,gruppe).
+assigned(a,complang).

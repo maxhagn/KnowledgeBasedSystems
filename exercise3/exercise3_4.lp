@@ -3,34 +3,39 @@
 % Model: empty.
 
 % mnr: 1
-% incs: groupMinus(gruppe,100)
-% incs: universityMinus(-2600)
+% incs: groupMinus(parcomp,1000)
+% incs: universityMinus(-100)
 
-person(a, 100).
-person(b, 100).
-person(c, 100).
-person(d, 100).
-person(e, 100).
-person(f, 100).
-person(g, 100).
-person(h, 100).
-person(i, 100).
-person(j, 100).
-person(k, 100).
-person(l, 100).
-person(m, 100).
-person(n, 100).
-person(o, 100).
-person(p, 100).
-person(q, 100).
-person(r, 100).
-person(s, 100).
-person(t, 100).
-person(u, 100).
-person(v, 100).
-person(w, 100).
-person(x, 100).
-person(y, 100).
-person(z, 100).
+person(albert, 100).
+person(bernd, 100).
+person(clarissa, 100).
+person(dorian, 100).
+person(emil, 100).
+person(flora, 100).
+person(gustav, 100).
+person(heinrich, 100).
+person(ida, 100).
+person(jakob, 100).
 
-assigned(a,gruppe).
+person(klaus, 100).
+person(laura, 100).
+person(max, 100).
+person(nikolaus, 100).
+person(oman, 100).
+person(peter, 100).
+person(quentin, 100).
+person(richard, 100).
+person(sebastian, 100).
+person(tom, 100).
+person(ulrich, 100).
+
+assigned(albert, parcomp).
+assigned(bernd, parcomp).
+assigned(clarissa, parcomp).
+assigned(dorian, parcomp).
+assigned(emil, parcomp).
+assigned(flora, parcomp).
+assigned(gustav, parcomp).
+assigned(heinrich, parcomp).
+assigned(ida, parcomp).
+assigned(jakob, parcomp).

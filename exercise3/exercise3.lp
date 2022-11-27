@@ -12,7 +12,7 @@ personAtUniversity(I,S) :- person(I,S), personInGroup(I,G).
 personIsStudent(I,S) :- person(I,S), not personAtUniversity(I,S).
 
 % student count is multiplied with 100 to get total university fees
-studentFees(FEE) :-  FEE = STUDENT_COUNT * 100, STUDENT_COUNT = #count{S : person(I,S), personIsStudent(I,S)}.
+studentFees(FEE) :-  FEE = STUDENT_COUNT * 100, STUDENT_COUNT = #count{I : person(I,_), personIsStudent(I,_)}.
 
 % total university minus is the sum of salaries payed by the university minus student fees
 universityMinus(TOTAL) :- TOTAL = SALARY_SUM - FEE, studentFees(FEE), SALARY_SUM = #sum{S,I : personAtUniversity(I,S)}.

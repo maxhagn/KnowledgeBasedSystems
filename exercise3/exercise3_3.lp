@@ -3,20 +3,27 @@
 % Model: empty.
 
 % mnr: 1
-% incs: groupMinus(g1,600)
-% incs: universityMinus(500)
+% incs: groupMinus(parcomp,1000)
+% incs: universityMinus(1000)
 
-person(a, 100).
-person(b, 100).
-person(c, 100).
-person(d, 100).
-person(e, 100).
-person(f, 100).
-person(g, 100).
+person(albert, 100).
+person(bernd, 100).
+person(clarissa, 100).
+person(dorian, 100).
+person(emil, 100).
+person(flora, 100).
+person(gustav, 100).
+person(heinrich, 100).
+person(ida, 100).
+person(jakob, 100).
 
-assigned(a, g1).
-assigned(b, g1).
-assigned(c, g1).
-assigned(d, g1).
-assigned(e, g1).
-assigned(f, g1).
+assigned(albert, parcomp).
+assigned(bernd, parcomp).
+assigned(clarissa, parcomp).
+assigned(dorian, parcomp).
+assigned(emil, parcomp).
+assigned(flora, parcomp).
+assigned(gustav, parcomp).
+assigned(heinrich, parcomp).
+assigned(ida, parcomp).
+assigned(jakob, parcomp).
