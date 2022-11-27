@@ -1,10 +1,10 @@
 #show groupMinus/2.
 #show universityMinus/1.
-% Model: empty.
 
+% Model: 1
+% Answer Set 1: universityMinus(-100) groupMinus(parcomp,1000)
 % mnr: 1
-% incs: groupMinus(parcomp,1000)
-% incs: universityMinus(-100)
+% incs: universityMinus(-100) groupMinus(parcomp,1000)
 
 person(albert, 100).
 person(bernd, 100).
@@ -16,7 +16,6 @@ person(gustav, 100).
 person(heinrich, 100).
 person(ida, 100).
 person(jakob, 100).
-
 person(klaus, 100).
 person(laura, 100).
 person(max, 100).

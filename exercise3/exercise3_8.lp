@@ -1,23 +1,12 @@
 #show groupMinus/2.
 #show universityMinus/1.
-% Model: empty.
 
+% Model: 1
+% Answer Set 1: universityMinus(11000) groupMinus(parcomp,150) groupMinus(complang,150) groupMinus(logic,150) groupMinus(datascience,150) groupMinus(compilers,150) groupMinus(ds,150) groupMinus(ml,150) groupMinus(ai,150) groupMinus(business,150) groupMinus(algo,150) groupMinus(management,10500)
 % mnr: 1
-% incs: groupMinus(parcomp,150)
-% incs: groupMinus(complang,150)
-% incs: groupMinus(logic,150)
-% incs: groupMinus(datascience,150)
-% incs: groupMinus(compilers,150)
-% incs: groupMinus(ds,150)
-% incs: groupMinus(ml,150)
-% incs: groupMinus(ai,150)
-% incs: groupMinus(business,150)
-% incs: groupMinus(algo,150)
-% incs: groupMinus(management,10500)
-% incs: universityMinus(11000)
+% incs: universityMinus(11000) groupMinus(parcomp,150) groupMinus(complang,150) groupMinus(logic,150) groupMinus(datascience,150) groupMinus(compilers,150) groupMinus(ds,150) groupMinus(ml,150) groupMinus(ai,150) groupMinus(business,150) groupMinus(algo,150) groupMinus(management,10500)
 
 person(simon, 10000).
-
 person(albert, 100).
 person(bernd, 100).
 person(clarissa, 100).
@@ -28,7 +17,6 @@ person(gustav, 100).
 person(heinrich, 100).
 person(ida, 100).
 person(jakob, 100).
-
 person(klaus, 100).
 person(laura, 100).
 person(max, 100).
@@ -39,7 +27,6 @@ person(quentin, 100).
 person(richard, 100).
 person(sebastian, 100).
 person(tom, 100).
-
 person(11808237, 0).
 person(11808238, 0).
 person(11808239, 0).
@@ -62,7 +49,6 @@ worksFor(richard, heinrich).
 worksFor(sebastian, ida).
 worksFor(tom, jakob).
 worksFor(klaus, albert).
-
 worksFor(klaus, simon).
 worksFor(laura, simon).
 worksFor(max, simon).
@@ -74,7 +60,6 @@ worksFor(richard, simon).
 worksFor(sebastian, simon).
 worksFor(tom, simon).
 worksFor(klaus, simon).
-
 
 assigned(albert, parcomp).
 assigned(bernd, complang).

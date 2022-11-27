@@ -1,10 +1,10 @@
 #show groupMinus/2.
 #show universityMinus/1.
 
-% Model: studentFees(1100) universityMinus(3672) groupMinus(parcomp,4772)
+% Model: 1
+% Answer Set 1: universityMinus(3772) groupMinus(parcomp,4772)
 % mnr: 1
-% incs: groupMinus(parcomp,4772)
-% incs: universityMinus(3772)
+% incs: universityMinus(3772) groupMinus(parcomp,4772)
 
 person(albert, 234).
 person(bernd, 645).
@@ -16,7 +16,6 @@ person(gustav, 234).
 person(heinrich, 765).
 person(ida, 123).
 person(jakob, 968).
-
 person(klaus, 123).
 person(laura, 354).
 person(max, 765).

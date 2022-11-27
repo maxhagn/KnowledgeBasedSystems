@@ -1,11 +1,10 @@
 #show groupMinus/2.
 #show universityMinus/1.
-% Model: universityExpenses(1300). groupExpenses(g1,1200). groupExpenses(g2,300).
 
+% Model: 1
+% Answer Set 1: universityMinus(1100) groupMinus(g1,1100) groupMinus(g2,200)
 % mnr: 1
-% incs: groupMinus(g1,1100)
-% incs: groupMinus(g2,200)
-% incs: universityMinus(1100)
+% incs: universityMinus(1100) groupMinus(g1,1100) groupMinus(g2,200)
 
 person(a, 100).
 person(b, 150).

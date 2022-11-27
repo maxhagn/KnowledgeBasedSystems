@@ -1,19 +1,10 @@
 #show groupMinus/2.
 #show universityMinus/1.
-% Model: empty.
 
+% Model: 1
+% Answer Set 1: universityMinus(800) groupMinus(parcomp,100) groupMinus(complang,100) groupMinus(logic,100) groupMinus(datascience,100) groupMinus(compilers,100) groupMinus(ds,100) groupMinus(ml,100) groupMinus(ai,100) groupMinus(business,100) groupMinus(algo,100)
 % mnr: 1
-% incs: groupMinus(parcomp,100)
-% incs: groupMinus(complang,100)
-% incs: groupMinus(logic,100)
-% incs: groupMinus(datascience,100)
-% incs: groupMinus(compilers,100)
-% incs: groupMinus(ds,100)
-% incs: groupMinus(ml,100)
-% incs: groupMinus(ai,100)
-% incs: groupMinus(business,100)
-% incs: groupMinus(algo,100)
-% incs: universityMinus(800)
+% incs: universityMinus(800) groupMinus(parcomp,100) groupMinus(complang,100) groupMinus(logic,100) groupMinus(datascience,100) groupMinus(compilers,100) groupMinus(ds,100) groupMinus(ml,100) groupMinus(ai,100) groupMinus(business,100) groupMinus(algo,100)
 
 person(albert, 100).
 person(bernd, 100).
@@ -25,7 +16,6 @@ person(gustav, 100).
 person(heinrich, 100).
 person(ida, 100).
 person(jakob, 100).
-
 person(klaus, 100).
 person(laura, 100).
 
