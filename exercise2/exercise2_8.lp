@@ -1,6 +1,6 @@
 #show bishopPos/2.
-%Models: 0
 
+% Models: 0
 % mnr: 0
 
 safety_net(1..10).

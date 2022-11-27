@@ -1,6 +1,7 @@
 #show bishopPos/2.
-%Models: 1
 
+% Models: 1
+% Answer Set 1: bishopPos(2,2)
 % mnr: 1
 % incs: bishopPos(2,2)
 
