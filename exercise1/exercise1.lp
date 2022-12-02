@@ -14,7 +14,7 @@ vertex2(Y) :- edge2(_,Y).
 :- maps(A,B), maps(X,Y), edge1(A,X), not edge2(B,Y).
 
 % mark the starting point of preserve in graph H
-reached1(X,0) :- preserve(X,_).
+reached1(Y,1) :- preserve(X,_), edge1(X,Y).
 
 % calculate distance for all nodes in graph G
 reached1(Y,K) :- reached1(X,Z), edge1(X,Y), numNodes1(C), K = Z + 1, Z <= C.
@@ -26,7 +26,7 @@ pathToPres1(X,MIN) :- reached1(X,_), preserve(_,X), #min{C : reached1(X,C)} = MI
 pathAfterMap(A,B) :- vertex2(X), edge2(X,Y), maps(A,X), maps(B,Y).
 
 % mark the starting point of preserve in graph H
-reached2(X,0) :- preserve(X,_).
+reached2(Y,1) :- preserve(X,_), pathAfterMap(X,Y).
 
 % calculate distance for all nodes in graph H
 reached2(Y,K) :- reached2(X,Z), pathAfterMap(X,Y), numNodes2(C), K = Z + 1, Z <= C.
