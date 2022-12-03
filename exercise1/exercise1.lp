@@ -8,31 +8,31 @@ vertex2(Y) :- edge2(_,Y).
 {maps(X,Y) : vertex2(Y)} = 1 :- vertex1(X).
 
 % check if every node in graph G maps to node in graph H
-:- maps(X,Y), numNodes1(V), #count{C : maps(C,_)} = COUNT, V != COUNT.
+:- maps(X,Y), numNodes1(EXPECTED_COUNT), ACTUAL_COUNT = #count{C : maps(C,_)}, EXPECTED_COUNT != ACTUAL_COUNT.
 
-% kill all set if they do not fulfill the homomorphism condition
+% remove set if maps do not fulfill the homomorphism condition
 :- maps(A,B), maps(X,Y), edge1(A,X), not edge2(B,Y).
 
-% mark the starting point of preserve in graph H
+% mark node if it is reachable from preserve starting point
 reached1(Y,1) :- preserve(X,_), edge1(X,Y).
 
 % calculate distance for all nodes in graph G
-reached1(Y,K) :- reached1(X,Z), edge1(X,Y), numNodes1(C), K = Z + 1, Z <= C.
+reached1(Y,DISTANCE) :- reached1(X,PREVIOUS_DISTANCE), edge1(X,Y), numNodes1(MAX_DISTANCE), DISTANCE = PREVIOUS_DISTANCE + 1, DISTANCE <= MAX_DISTANCE.
 
 % extract minimum distance to end of preserve in graph G
-pathToPres1(X,MIN) :- reached1(X,_), preserve(_,X), #min{C : reached1(X,C)} = MIN.
+minPreserveDistG(X,MIN_DISTANCE) :- reached1(X,_), preserve(_,X), MIN_DISTANCE = #min{C : reached1(X,C)}.
 
-% create mapped graph
-pathAfterMap(A,B) :- vertex2(X), edge2(X,Y), maps(A,X), maps(B,Y).
+% create edges for homomorphism graph
+mappedEdge(A,B) :- vertex2(X), maps(A,X), maps(B,Y), edge2(X,Y).
 
-% mark the starting point of preserve in graph H
-reached2(Y,1) :- preserve(X,_), pathAfterMap(X,Y).
+% mark node if it is reachable from preserve starting point
+reached2(Y,1) :- preserve(X,_), mappedEdge(X,Y).
 
-% calculate distance for all nodes in graph H
-reached2(Y,K) :- reached2(X,Z), pathAfterMap(X,Y), numNodes2(C), K = Z + 1, Z <= C.
+% calculate distance for all nodes in mapped graph
+reached2(Y,DISTANCE) :- reached2(X,PREVIOUS_DISTANCE), mappedEdge(X,Y), numNodes1(MAX_DISTANCE), DISTANCE = PREVIOUS_DISTANCE + 1, DISTANCE <= MAX_DISTANCE.
 
 % extract minimum distance to end of preserve in graph H
-pathToPres2(X,MIN) :- preserve(_,X), #min{C : reached2(X,C)} = MIN.
+minPreserveDistH(X,MIN_DISTANCE) :- preserve(_,X), MIN_DISTANCE = #min{C : reached2(X,C)}.
 
-% kill sets if distance is not preserved
-:- maps(_,_), preserve(_,E), pathToPres1(E,G), pathToPres2(E,H), G != H.
+% remove set if distance is not preserved
+:- preserve(_,PRESERVE_END), minPreserveDistG(PRESERVE_END,DISTANCE_G), minPreserveDistH(PRESERVE_END,DISTANCE_H), DISTANCE_G != DISTANCE_H.
