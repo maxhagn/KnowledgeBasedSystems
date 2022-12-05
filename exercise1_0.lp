@@ -1,6 +1,6 @@
 #show maps/2.
 
-% Model: 1
+% Models: 1
 % Answer Set 1: maps(a,e) maps(b,f) maps(c,f) maps(d,g)
 
 numNodes1(4). numNodes2(3).

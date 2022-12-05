@@ -1,6 +1,6 @@
 #show maps/2.
 
-% Model: 4
+% Models: 4
 % Answer Set 1: maps(a,f) maps(b,g) maps(c,h) maps(d,e)
 % Answer Set 2: maps(a,e) maps(b,f) maps(c,g) maps(d,h)
 % Answer Set 3: maps(a,g) maps(b,h) maps(c,e) maps(d,f)

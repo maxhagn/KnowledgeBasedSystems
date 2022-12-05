@@ -1,6 +1,6 @@
 #show maps/2.
 
-% Model: 3
+% Models: 3
 % Answer Set 1: maps(a,x) maps(b,y)
 % Answer Set 2: maps(a,x) maps(b,z)
 % Answer Set 3: maps(a,x) maps(b,x)
